@@ -7,7 +7,7 @@ from firebase_admin import credentials, firestore
 app = Flask(__name__)
 
 # 🔹 Initialize Firebase Admin SDK using env variable
-firebase_json = os.environ.get("FIREBASE_KEYS")
+firebase_json = os.environ.get("FIREBASE_KEY")
 if not firebase_json:
     raise Exception("FIREBASE_KEY environment variable not set!")
 
